@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Rohit Sharma",
+    "role": "Batsman",
+    "team": "Mumbai Indians",
+    "basePrice": "2 Cr",
+    "soldPrice": "16.5 Cr",
+    "rating": 9.2,
+    "image": "https://i.ibb.co.com/PsGWTT6Z/images-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Virat Kohli",
+    "role": "Batsman",
+    "team": "Royal Challengers Bengaluru",
+    "basePrice": "2 Cr",
+    "soldPrice": "18 Cr",
+    "rating": 9.8,
+    "image": "https://randomuser.me/api/portraits/men/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Jasprit Bumrah",
+    "role": "Bowler",
+    "team": "Mumbai Indians",
+    "basePrice": "2 Cr",
+    "soldPrice": "12 Cr",
+    "rating": 9.1,
+    "image": "https://randomuser.me/api/portraits/men/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ravindra Jadeja",
+    "role": "All-Rounder",
+    "team": "Chennai Super Kings",
+    "basePrice": "2 Cr",
+    "soldPrice": "15 Cr",
+    "rating": 9.0,
+    "image": "https://randomuser.me/api/portraits/men/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "KL Rahul",
+    "role": "Batsman/Wicketkeeper",
+    "team": "Lucknow Super Giants",
+    "basePrice": "2 Cr",
+    "soldPrice": "17 Cr",
+    "rating": 8.7,
+    "image": "https://randomuser.me/api/portraits/men/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Shubman Gill",
+    "role": "Batsman",
+    "team": "Gujarat Titans",
+    "basePrice": "1 Cr",
+    "soldPrice": "12 Cr",
+    "rating": 8.9,
+    "image": "https://randomuser.me/api/portraits/men/6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Hardik Pandya",
+    "role": "All-Rounder",
+    "team": "Mumbai Indians",
+    "basePrice": "2 Cr",
+    "soldPrice": "15 Cr",
+    "rating": 8.8,
+    "image": "https://randomuser.me/api/portraits/men/7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Ruturaj Gaikwad",
+    "role": "Batsman",
+    "team": "Chennai Super Kings",
+    "basePrice": "50 L",
+    "soldPrice": "8 Cr",
+    "rating": 8.5,
+    "image": "https://randomuser.me/api/portraits/men/8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Yuzvendra Chahal",
+    "role": "Bowler",
+    "team": "Rajasthan Royals",
+    "basePrice": "75 L",
+    "soldPrice": "7 Cr",
+    "rating": 8.3,
+    "image": "https://randomuser.me/api/portraits/men/9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Glenn Maxwell",
+    "role": "All-Rounder",
+    "team": "Royal Challengers Bengaluru",
+    "basePrice": "1 Cr",
+    "soldPrice": "11 Cr",
+    "rating": 8.6,
+    "image": "https://randomuser.me/api/portraits/men/10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Andre Russell",
+    "role": "All-Rounder",
+    "team": "Kolkata Knight Riders",
+    "basePrice": "2 Cr",
+    "soldPrice": "12.5 Cr",
+    "rating": 9.0,
+    "image": "https://randomuser.me/api/portraits/men/11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Mohammed Siraj",
+    "role": "Bowler",
+    "team": "Royal Challengers Bengaluru",
+    "basePrice": "1 Cr",
+    "soldPrice": "7.5 Cr",
+    "rating": 8.4,
+    "image": "https://randomuser.me/api/portraits/men/12.jpg"
+  }
+]
