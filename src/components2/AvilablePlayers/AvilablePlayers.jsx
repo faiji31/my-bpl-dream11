@@ -3,7 +3,9 @@ import React from 'react';
 const AvilablePlayers = () => {
     return (
         <div>
-            <h1>Avilable Players</h1>
+            <h1>
+                Liamm
+            </h1>
         </div>
     );
 };
