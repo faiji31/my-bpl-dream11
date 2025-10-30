@@ -4,7 +4,8 @@ import { Suspense } from 'react'
 import navImg from './assets/logo.png'
 import dollarImg from './assets/dollar.png'
 
-import SelectedPlayers from './components/selectedPlayers/selectedPlayers'
+
+import AvilablePlayers from './components2/AvilablePlayers/AvilablePlayers'
 const fetchPlayers = async()=>{
   const res = await fetch("https://raw.githubusercontent.com/faiji31/bottles-data/refs/heads/main/players.json")
   return res.json()
@@ -31,7 +32,7 @@ function App() {
 </div>
 
 <Suspense fallback={<span className="loading loading-spinner text-neutral"></span>}>
-  <SelectedPlayers PlayersPromise={PlayersPromise}></SelectedPlayers>
+  <AvilablePlayers PlayersPromise={PlayersPromise}></AvilablePlayers>
 </Suspense>
 
   

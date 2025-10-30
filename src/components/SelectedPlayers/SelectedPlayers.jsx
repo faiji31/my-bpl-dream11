@@ -4,7 +4,7 @@ const SelectedPlayers = ({PlayersPromise}) => {
     const PlayerData = use(PlayersPromise)
     console.log(PlayerData)
     return (
-        <div>
+        <div className='max-w-[1200px] mx-auto'>
             <h1>Seleted Players:</h1>
             <p>Name:{PlayerData
                 .name}</p>
