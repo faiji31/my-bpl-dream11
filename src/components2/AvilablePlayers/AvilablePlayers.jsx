@@ -35,7 +35,7 @@ const AvilablePlayers = ({PlayersPromise}) => {
     <span>{player.bowling_style}</span>
   </div>
   <div className='flex justify-between items-center mt-3 '>
-    <p className='font-bold'>{player.price}</p>
+    <p className='font-bold'>{player.price_usd_estimated}</p>
     <button className='btn'>Choose</button>
   </div>
   
