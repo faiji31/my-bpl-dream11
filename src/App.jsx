@@ -16,15 +16,15 @@ const fetchPlayers = async()=>{
 }
 
 
-
+const PlayersPromise = fetchPlayers()
 function App() {
-  const PlayersPromise = fetchPlayers()
-
+  
+const [avilableBalence,setAvilableBalance]=useState(6000000001)
   const [toggle,setToggle]=useState(true)
 
   return (
     <>
-   <NavBar></NavBar>
+   <NavBar avilableBalence={avilableBalence}></NavBar>
 
 <div className='flex justify-between items-center max-w-[1200px] mx-auto'>
   <h1 className='font-bold text-2xl'>Avilable Players</h1>
@@ -38,7 +38,7 @@ function App() {
 
 {
   toggle === true? <Suspense fallback={<span className="loading loading-spinner text-neutral"></span>}>
-  <AvilablePlayers PlayersPromise={PlayersPromise}></AvilablePlayers>
+  <AvilablePlayers avilableBalence={avilableBalence} setAvilableBalance={setAvilableBalance} PlayersPromise={PlayersPromise}></AvilablePlayers>
  
 </Suspense>:<SelectedPlayers></SelectedPlayers>
 }

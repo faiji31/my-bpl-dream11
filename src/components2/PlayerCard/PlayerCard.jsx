@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import userImg from "../../assets/user1.png"
 import FlagImg from '../../assets/Group.png'
 
-const PlayerCard = ({player}) => {
+const PlayerCard = ({player,setAvilableBalance,avilableBalence}) => {
     const [isSelected,setIsSelected]=useState(false)
 
     return (
@@ -33,7 +33,13 @@ const PlayerCard = ({player}) => {
   </div>
   <div className='flex justify-between items-center mt-3 '>
     <p className='font-bold'>{player.price_usd_estimated}</p>
-    <button disabled={isSelected} onClick={()=>setIsSelected(true)} className='btn'>{isSelected=== true ?"Selected":"Choose Player"}</button>
+    <button disabled={isSelected} onClick={()=>{
+    
+    
+        setIsSelected(true)
+        setAvilableBalance(avilableBalence-player.price_usd_estimated.split(",").join(""))}
+
+    } className='btn'>{isSelected=== true ?"Selected":"Choose Player"}</button>
   </div>
   
   

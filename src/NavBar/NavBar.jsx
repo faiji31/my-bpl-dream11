@@ -3,7 +3,7 @@ import React from 'react';
 import navImg from '../assets/logo.png'
 import dollarImg from '../assets/dollar.png'
 
-const NavBar = () => {
+const NavBar = ({avilableBalence}) => {
     return (
         <div>
                   <div className="navbar max-w-[1200px] mx-auto">
@@ -11,7 +11,7 @@ const NavBar = () => {
     <a className="btn btn-ghost text-xl"><img className='w-[60px] h-[60px]' src={navImg}alt="logo" /></a>
   </div>
   <div className="flex items-center">
-    <span className='mr-1'>600000000</span>
+    <span className='mr-1'>{avilableBalence}</span>
     <span className='mr-1'>Coin</span>
     <img  src={dollarImg} alt="" className='w-6 h-6' />
   </div>
