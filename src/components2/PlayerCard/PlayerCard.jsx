@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import userImg from "../../assets/user1.png"
 import FlagImg from '../../assets/Group.png'
 
 const PlayerCard = ({player}) => {
+    const [isSelected,setIsSelected]=useState(false)
+
     return (
          <div className="card bg-base-100  shadow-sm p-4">
   <figure>
@@ -31,7 +33,7 @@ const PlayerCard = ({player}) => {
   </div>
   <div className='flex justify-between items-center mt-3 '>
     <p className='font-bold'>{player.price_usd_estimated}</p>
-    <button className='btn'>Choose</button>
+    <button disabled={isSelected} onClick={()=>setIsSelected(true)} className='btn'>{isSelected=== true ?"Selected":"Choose Player"}</button>
   </div>
   
   
