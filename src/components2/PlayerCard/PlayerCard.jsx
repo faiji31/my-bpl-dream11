@@ -4,6 +4,17 @@ import FlagImg from '../../assets/Group.png'
 
 const PlayerCard = ({player,setAvilableBalance,avilableBalence}) => {
     const [isSelected,setIsSelected]=useState(false)
+    
+
+    const handleSelected = (playerData)=>{
+        const playerPrice = parseInt(playerData.price_usd_estimated.split(",").join(""))
+if (avilableBalence<playerPrice){
+    alert("not enough money!!")
+    return
+}
+         setIsSelected(true)
+        setAvilableBalance(avilableBalence-playerPrice)
+    }
 
     return (
          <div className="card bg-base-100  shadow-sm p-4">
@@ -34,10 +45,9 @@ const PlayerCard = ({player,setAvilableBalance,avilableBalence}) => {
   <div className='flex justify-between items-center mt-3 '>
     <p className='font-bold'>{player.price_usd_estimated}</p>
     <button disabled={isSelected} onClick={()=>{
+    handleSelected(player)
     
-    
-        setIsSelected(true)
-        setAvilableBalance(avilableBalence-player.price_usd_estimated.split(",").join(""))}
+       }
 
     } className='btn'>{isSelected=== true ?"Selected":"Choose Player"}</button>
   </div>
